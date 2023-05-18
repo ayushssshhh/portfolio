@@ -2,6 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Space+Grotesk&display=swap');
 
+/* cursor */
+.cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 2px;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 100000000000000000000000000000000000000000;
+    background-color: #000;
+}
+
+.grow, .grow-small{
+    transform: scale(10);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+.grow-small{
+    transform: scale(3.5);
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.995);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+/* html */
+
+html{
+    cursor:none;
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -70,7 +113,7 @@ nav {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    background-color: #000000f2;
+    background-color: #ffffff;
     width: 100%;
     height: 30px;
     display: flex;
@@ -93,19 +136,20 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color: rgb(241, 233, 233);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 4px;
     opacity: 0;
+    cursor: none;
 }
 
 nav ul li a:after {
     position: absolute;
     content: '';
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     width: 100px;
     height: 3px;
     bottom: -10px;
@@ -122,7 +166,7 @@ nav ul li a:hover:after {
 
 nav .close {
     width: 30px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: absolute;
     top: 6%;
     right: 5%;
@@ -135,7 +179,7 @@ nav .close::before {
     position: absolute;
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     transition: background .5s ease;
 }
 
@@ -299,8 +343,6 @@ nav .close::after {
     text-align: center;
 }
 
-
-
 .aboutTxt span {
     font-size: 35px;
     font-weight: 500;
@@ -328,7 +370,7 @@ nav .close::after {
 
 }
 
-/* phone */
+/*-------------------phone -----------*/
 
 .iphone {
     height: 600px;
@@ -508,7 +550,7 @@ nav .close::after {
     font-size: 50px;
 }
 
-/* skill */
+/* -----------------------skill ------------------------*/
 
 .skill {
     color: #000000a6;
@@ -522,7 +564,6 @@ nav .close::after {
     font-family: 'Space Grotesk', sans-serif;
     overflow: hidden;
 }
-
 
 .row {
     display: flex;
@@ -568,20 +609,11 @@ nav .close::after {
 }
 
 /* project */
-
 .project{
     width: 100vw;
     overflow: hidden;
     
 }
-
-/* .title{
-    width: 100vw;
-    height: 20px;
-    background-color: aqua;
-} */
-
-
 
 .project .phead{
     background-color: #000000;
@@ -775,7 +807,8 @@ footer{
     position: relative;
     mix-blend-mode: difference;
     z-index: 2;
-    /* overflow: hidden; */
+    height: 75vh;
+    overflow: hidden;
 }
 
 footer h1{
@@ -788,26 +821,63 @@ footer h1{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-
-
-
-
 .square{
-    width: 70vw;
-    height: 70vw;
+    width: 80vw;
+    height: 80vw;
     background-color: rgb(253, 253, 253);
     border-radius: 20%;
     position: relative;
-    top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50% , -30vh);
     mix-blend-mode: difference;
     animation: rot 5s alternate infinite;
 }
 
+
+footer .footS{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    transform: translate(-45%);
+    gap: 20px;
+    width: fit-content;
+    z-index: 30;
+}
+
+footer .footS .box{
+    position: relative;
+    top:-20px;
+    display: flex;
+    height: fit-content;
+}
+
+footer .footS .box i{
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+footer .footS .box a{
+    position: relative;
+    text-shadow: none;
+    color: black;
+}
+
+footer .copy{
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+    position: relative;
+    top:-30px;
+}
+
 @keyframes rot {
     0%{
-        transform: translate(-50% , -50%)  rotate(0deg)  scale(0.5);
+        transform: translate(-50% , -50%)  rotate(0deg)  scale(0.3);
     }
 
     100%{
@@ -821,18 +891,15 @@ footer h1{
     .project .cardCtn{
         width: 85vw;
     }
-
-    .project .phead{
-        /* font-size: 2vmax; */
-    }
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
     .aboutTxt {
         margin-top: 0px;
+    }
+
+    footer{
+        height: 50vh;
     }
 }
 
@@ -842,7 +909,6 @@ footer h1{
     .project {
         /* font-size: 2.2vmax; */
         transform: scale(0.999);
-        
     }
 }
 
@@ -893,7 +959,7 @@ footer h1{
         width: 75vw;
     }
 
-    footer .title{
-    font-size: 70px;
+    footer{
+        height: 40vh;
     }
 }

@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- locomotive scroll -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
     <link rel="stylesheet" href="./style.css">
 
     <!--FONT-AWESOME--->
@@ -18,23 +15,23 @@
 </head>
 
 <body>
+    <div class="cursor"></div>
     <div class="a">
 
         <div class="menu">
-            <div class="container">
+            <div class="container cursor-scale">
                 <div class="bars"></div>
             </div>
 
             <nav class="hidden">
-                <div class="close">
+                <div class="close cursor-scale">
                     <div></div>
                 </div>
 
                 <ul>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">HOME</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">ABOUT</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">PROJECT</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                    <li class="cursor-scale small"><a href="#about"  >ABOUT</a></li>
+                    <li class="cursor-scale small"><a href="#PRO"  >PROJECT</a></li>
+                    <li class="cursor-scale small"><a href="#contact"  >CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,58 +44,58 @@
 
 
         <div id="main">
-            <div class="work"> CURRENTLY OPEN <br> FOR WORK</div>
+            <div class="work cursor-scale small"> CURRENTLY OPEN <br> FOR WORK</div>
 
             <div class="cover">
                 <div class="b">
                     <div class="bg"></div>
                 </div>
-                <img class="bio" src="./images/me.png" alt="">
+                <img class="bio cursor-scale" src="./images/me.png" alt="">
             </div>
-            <div class="text text2">
+            <div class="text text2 cursor-scale small">
                 <h1>KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH</h1>
             </div>
-            <div class="text text3">
+            <div class="text text3 cursor-scale small">
                 <h1>KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH</h1>
             </div>
-            <div class="text text4">
+            <div class="text text4 cursor-scale small">
                 <h1>KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH &nbsp; KUMAR AYUSH</h1>
             </div>
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <div class="aboutTxt"><span class="hey">Hello There!<div class="line"></div></span>I'm KUMAR AYUSH,
                 FULLSTACK
-                DEVELOPER and I'm <span>PASSIONATE</span> to create something which is technically
-                <span>BRILLIANT</span>
-                and creatively <span>AESTHETIC</span>
+                DEVELOPER and I'm <span class="cursor-scale small">PASSIONATE</span> to create something which is technically
+                <span class="cursor-scale small">BRILLIANT</span>
+                and creatively <span class="cursor-scale small">AESTHETIC</span>
             </div>
 
-            <div class="iphone">
+            <div class="iphone" id="#ayush" >
                 <div class="mobile">
-                    <img src="./images/iphoneFrame.png" alt="" class="phone">
+                    <img src="./images/iphoneFrame.png" alt="" class="phone cursor-scale small">
                     <div class="page">
                         <div class="one">
                             <div class="wallpaper">
-                                <img src="./images/me2.png" alt="">
-                                <p>Swipe up</p>
+                                <img class="cursor-scale small" src="./images/me2.png" alt="">
+                                <p class="cursor-scale small">Swipe up</p>
                                 <div class="lock"></div>
                             </div>
                         </div>
-                        <div class="two">
+                        <div class="two cursor-scale small">
                             <h3>Socials</h3>
                             <div class="con">
-                                <div class="box"><a href=""><i class="fa-solid fa-envelope"></i>
+                                <div class="box"><a href="mailto:kumar.ayushssshhh@gmail.com"><i class="fa-solid fa-envelope cursor-scale"></i>
                                         <p>GMAIL</p>
                                     </a></div>
-                                <div class="box"><a href=""><i class="fa-brands fa-linkedin"></i>
+                                <div class="box"><a href="https://www.linkedin.com/in/kumar-ayush-3b8a27240/" target="_blank"><i class="fa-brands fa-linkedin cursor-scale"></i>
                                         <p>Linkedin</p>
                                     </a>
                                 </div>
-                                <div class="box"><a href=""><i class="fa-brands fa-github"></i>
+                                <div class="box"><a href="https://github.com/ayushssshhh" target="_blank"><i class="fa-brands fa-github cursor-scale"></i>
                                         <p>GitHub</p>
                                     </a>
                                 </div>
-                                <div class="box"><a href=""><i class="fa-solid fa-file"></i>
+                                <div class="box"><a href=""><i class="fa-solid fa-file cursor-scale"></i>
                                         <p>CV</p>
                                     </a>
                                 </div>
@@ -110,9 +107,9 @@
         </div>
 
         <div class="skill">
-            <h1>My Expertise</h1>
+            <h1 class="cursor-scale small">My Expertise</h1>
 
-            <div class="row">
+            <div class="row cursor-scale">
                 <div class="img">
                     <img src="./images/skill/html.png" alt="">
                 </div>
@@ -351,7 +348,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div id="PRO" class="project">
 
             <div class="title"></div>
             <div class="phead">
@@ -509,8 +506,8 @@
                             </span>
 
                             <div class="link">
-                                <a href="">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
+                                <a class="cursor-scale small" href="https://shiny-fish.cyclic.app/" target="_blank">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="cursor-scale small" href="https://github.com/ayushssshhh/image-ai" target="_blank">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
 
                             </div>
                         </div>
@@ -551,8 +548,8 @@
                             </span>
 
                             <div class="link">
-                                <a href="">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
+                                <a class="cursor-scale small" href="https://dailyblog-5f7k.onrender.com" target="_blank">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="cursor-scale small" href="https://github.com/ayushssshhh/Daily-Blog" target="_blank">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
 
                             </div>
                         </div>
@@ -593,8 +590,8 @@
                             </span>
 
                             <div class="link">
-                                <a href="">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
+                                <a class="cursor-scale small" href="https://my-weather-bfbc.onrender.com" target="_blank">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="cursor-scale small" href="https://github.com/ayushssshhh/My-Weather" target="_blank">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
 
                             </div>
                         </div>
@@ -628,8 +625,8 @@
                             </span>
 
                             <div class="link">
-                                <a href="">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
+                                <a class="cursor-scale small" href="https://ayushssshhh.github.io/FLAMINGO/" target="_blank">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="cursor-scale small" href="https://shiny-fish.cyclic.app/" target="_blank">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
 
                             </div>
                         </div>
@@ -661,16 +658,12 @@
                                         <li>Jquery</li>
                                     </ul>
 
-                                    <ul>
-                                        <li>Open Weather Api</li>
-                                    </ul>
-
                                 </span>
                             </span>
 
                             <div class="link">
-                                <a href="">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
+                                <a class="cursor-scale small" href="https://ayushssshhh.github.io/snake-game-2d/" target="_blank">VISIT&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="cursor-scale small" href="https://github.com/ayushssshhh/snake-game-2d" target="_blank">Source Code&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>
 
                             </div>
                         </div>
@@ -679,8 +672,23 @@
             </div>
         </div>
 
-        <footer>
-            <h1>LET's Work <br>TOGETHER</h1>
+        <footer class="cursor-scale small" id="contact">
+            <h1>LET's Work <br>TOGETHER</h1> 
+                <div class="footS">
+                    <div class="box"><a href="mailto:kumar.ayushssshhh@gmail.com"><i class="fa-solid fa-envelope cursor-scale"></i>
+                        <p>GMAIL</p>
+                    </a></div>
+                <div class="box"><a href="https://www.linkedin.com/in/kumar-ayush-3b8a27240/" target="_blank"><i class="fa-brands fa-linkedin cursor-scale"></i>
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+                <div class="box"><a href="https://github.com/ayushssshhh" target="_blank"><i class="fa-brands fa-github cursor-scale"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                </div>
+
+                <p class="copy">KUMAR AYUSH | 2023</p>
             <div class="square"></div>
         </footer>
 
