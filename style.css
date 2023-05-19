@@ -235,7 +235,7 @@ nav .close::after {
     /* background-color: #000; */
     margin: auto;
     width: 500px;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
 }
 
@@ -850,12 +850,14 @@ footer .footS .box{
     top:-20px;
     display: flex;
     height: fit-content;
+    mix-blend-mode: difference;
 }
 
 footer .footS .box i{
     text-shadow: none;
     display: flex;
     justify-content: center;
+    mix-blend-mode: difference;
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
@@ -864,6 +866,7 @@ footer .footS .box a{
     position: relative;
     text-shadow: none;
     color: black;
+    mix-blend-mode: difference;
 }
 
 footer .copy{
@@ -961,5 +964,15 @@ footer .copy{
 
     footer{
         height: 40vh;
+    }
+
+    .cursor{
+        height: 0px;
+        width: 0px;
+    }
+
+    .square{
+        height: 90vw;
+        width: 90vw;
     }
 }
