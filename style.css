@@ -232,7 +232,6 @@ nav .close::after {
 }
 
 .cover {
-    /* background-color: #000; */
     margin: auto;
     width: 500px;
     height: 100vh;
