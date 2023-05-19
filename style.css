@@ -232,11 +232,12 @@ nav .close::after {
 }
 
 .cover {
-    /* background-color: #000; */
+    background-color: #000;
     margin: auto;
     width: 500px;
-    height: 120vh;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .cover img {
@@ -269,16 +270,8 @@ nav .close::after {
     letter-spacing: 3px;
 }
 
-.text1 h1 {
-    top: 14px;
-    -webkit-text-stroke: 4px rgb(0, 0, 0);
-    z-index: 20;
-    animation: scroll 5s alternate-reverse infinite;
-
-}
-
 .text2 h1 {
-    top: 7px;
+    /* top: 7px; */
     position: relative;
     color: #00000076;
     z-index: 2;
@@ -286,14 +279,14 @@ nav .close::after {
 }
 
 .text3 h1 {
-    top: -2px;
+    /* top: -2px; */
     -webkit-text-stroke: 4px rgb(0, 0, 0);
     z-index: 20;
     animation: scroll 6s alternate-reverse infinite;
 }
 
 .text4 h1 {
-    top: -14px;
+    /* top: -14px; */
     color: #00000076;
     z-index: 2;
     animation: anim 6s alternate-reverse infinite;
