@@ -28,7 +28,7 @@ setInterval(() => {
     
     let h = cardCtn.height();
     pH.height(h + 300);
-    console.log(h);
+    // console.log(h);
 }, 1000)
 
 
