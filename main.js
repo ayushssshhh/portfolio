@@ -85,3 +85,73 @@ color.forEach(link => {
   })
   
 })
+
+var text2 = document.querySelector(".text2");
+
+var text3 = document.querySelector(".text3");
+
+var text4 = document.querySelector(".text4");
+
+var bioImg = document.querySelector(".bio");
+
+// window.addEventListener("load" , ()=>{
+//     setTimeout(()=>{
+//         bioImg.classList.remove("hidden");
+//     } ,"200")
+//     setTimeout(()=>{
+//         text2.classList.remove("hidden");
+//     } ,"500")
+
+//     setTimeout(()=>{
+//         text3.classList.remove("hidden");
+//     } ,"900")
+
+//     setTimeout(()=>{
+//         text4.classList.remove("hidden");
+//     } ,"1300")
+// })
+
+var text2H1 = document.querySelector(".text2 h1")
+var text2Scroll = 0;
+
+var text3H1 = document.querySelector(".text3 h1")
+var text3Scroll = -200;
+text3H1.style.left = text3Scroll + "%";
+
+var text4H1 = document.querySelector(".text4 h1")
+var text4Scroll = -50;
+text4H1.style.left = text4Scroll + "%";
+
+window.addEventListener("scroll" , ()=>{
+    window.onscroll = function(e) {
+        // print "false" if direction is down and "true" if up
+        var scrollScale = this.oldScroll - this.scrollY;
+        if(isNaN(scrollScale)){
+            scrollScale = 0;
+        }
+        // console.log(scrollScale);
+        if(scrollScale >= 0){
+
+            // horzontal animation
+            text2Scroll+=scrollScale*0.025;
+            text2H1.style.left = text2Scroll + "%";
+
+            text3Scroll-=scrollScale*0.05;
+            text3H1.style.left = text3Scroll + "%";
+
+            text4Scroll+=scrollScale*0.025;
+            text4H1.style.left = text4Scroll + "%";
+        } else{
+
+            text2Scroll+=0.025*scrollScale;
+            text2H1.style.left = text2Scroll + "%";
+
+            text3Scroll-=0.05*scrollScale;
+            text3H1.style.left = text3Scroll + "%";
+
+            text4Scroll+=scrollScale*0.025;
+            text4H1.style.left = text4Scroll + "%";
+        }
+        this.oldScroll = this.scrollY;
+      }
+})

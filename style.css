@@ -5,8 +5,8 @@
 /* cursor */
 .cursor{
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: solid 2px;
     transition: transform .3s ease;
@@ -197,7 +197,7 @@ nav .close::after {
     overflow: hidden;
     padding: 20px;
     height: 100vh;
-    background-image: radial-gradient(rgb(154, 154, 154), rgb(235, 228, 228)70%);
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(235, 228, 228)70%);
     /* background-color: black; */
 }
 
@@ -274,21 +274,21 @@ nav .close::after {
     position: relative;
     color: #00000076;
     z-index: 2;
-    animation: anim 5s alternate-reverse infinite;
+    animation: anim 32s alternate-reverse infinite;
 }
 
 .text3 h1 {
     /* top: -2px; */
     -webkit-text-stroke: 4px rgb(0, 0, 0);
     z-index: 20;
-    animation: scroll 6s alternate-reverse infinite;
+    animation: scroll 36s alternate-reverse infinite;
 }
 
 .text4 h1 {
     /* top: -14px; */
     color: #00000076;
     z-index: 2;
-    animation: anim 6s alternate-reverse infinite;
+    animation: anim 30s alternate-reverse infinite;
 }
 
 @keyframes anim {
@@ -297,17 +297,17 @@ nav .close::after {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 @keyframes scroll {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-10%);
     }
 
     to {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
 }
 
@@ -613,7 +613,7 @@ nav .close::after {
     overflow: hidden;
     position: relative;
     display: flex;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: 100;
     width: 200vw;
     letter-spacing: 4px;
@@ -627,7 +627,7 @@ nav .close::after {
 }
 
 .phead h1{
-    animation: ph 4s alternate-reverse infinite;
+    animation: ph 6s alternate-reverse infinite;
 }
 
 @keyframes ph {
@@ -971,4 +971,8 @@ footer .copy{
     .cardCtn .card:hover{
         background-image: radial-gradient(rgb(240, 229, 229) , rgb(255, 255, 255));
     }
+}
+
+.hidden{
+    /* display: none; */
 }
